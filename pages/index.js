@@ -1,7 +1,17 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 // components
 import StartingSection from "../components/sections/starting-section";
+Home.layout = "M";
 export default function Home() {
+  const router = useRouter();
+
+  if (router.isFallback)
+    return (
+      <div>
+        <h2>Loading ...</h2>
+      </div>
+    );
   return (
     <div>
       <Head>
@@ -13,5 +23,3 @@ export default function Home() {
     </div>
   );
 }
-
-Home.layout = "M";
