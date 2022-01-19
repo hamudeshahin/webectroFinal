@@ -1,0 +1,56 @@
+.main_content {
+  position: relative;
+}
+
+.g_right,
+.g_left {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.g_left {
+  top: 10px;
+  left: -20%;
+}
+.g_right {
+  top: -22%;
+  right: -50%;
+}
+
+.outer,
+.footer {
+  position: relative;
+  z-index: 100;
+}
+
+/* transitions */
+
+.appear {
+}
+.appearActive {
+}
+.appearDone {
+}
+
+.enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.enterActive {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+.enterDone {
+}
+
+.exit {
+  opacity: 1;
+}
+.exitActive {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+.exitDone {
+}

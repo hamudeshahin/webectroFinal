@@ -1,0 +1,18 @@
+.mobile_drawer {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(3px);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.drawer_footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

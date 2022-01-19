@@ -1,0 +1,13 @@
+.desc {
+  font-size: 62px;
+}
+
+.svg_style {
+  width: 70%;
+}
+
+@media (max-width: 1120px) {
+  .desc {
+    font-size: 52px;
+  }
+}

@@ -1,0 +1,37 @@
+.header__outer {
+  position: relative;
+  z-index: 100;
+}
+
+.navs {
+  display: flex;
+  gap: 20px;
+}
+.navs.drawer {
+  flex-direction: column;
+  width: 40%;
+  gap: 10px;
+}
+
+.nav_item {
+  color: #fff;
+}
+.navs.drawer .nav_item {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+.navs.drawer .nav_item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease;
+}
+.navs.drawer .nav_item:hover::after {
+  width: 100%;
+}
