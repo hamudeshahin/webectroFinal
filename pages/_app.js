@@ -17,8 +17,8 @@ const layouts = {
 
 function MyApp({ Component, pageProps }) {
   const store = useStore(pageProps.initialReduxState);
-  const Layout = layouts[Component.layout] || ((children) => <>{children}</>);
-
+  // const Layout = layouts[Component.layout] || ((children) => <>{children}</>);
+  const Layout = layouts["M"];
   return (
     <NextThemesProvider
       defaultTheme="system"
