@@ -13,12 +13,13 @@ import "../styles/globals.css";
 
 const layouts = {
   M: MainLayout,
+  NONE: (props) => <>{props.children}</>,
 };
 
 function MyApp({ Component, pageProps }) {
   const store = useStore(pageProps.initialReduxState);
   const Layout =
-    layouts[Component.layout || "M"] || ((children) => <>{children}</>);
+    layouts[Component.layout || "NONE"] || ((children) => <>{children}</>);
   return (
     <NextThemesProvider
       defaultTheme="system"
