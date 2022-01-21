@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
 // components
-import { Link } from "@nextui-org/react";
+import { Grid, Link } from "@nextui-org/react";
 import { IoClose } from "react-icons/io5";
 import NavItems from "../layout/nav-items";
 // redux
@@ -11,7 +11,11 @@ import style from "./style.module.css";
 function MobileDrawer() {
   const dispatch = useDispatch();
   return (
-    <div className={style.mobile_drawer}>
+    <Grid
+      as="div"
+      className={style.mobile_drawer}
+      css={{ background: "$blurBackground" }}
+    >
       <Link
         href="#"
         onClick={(e) => {
@@ -27,7 +31,7 @@ function MobileDrawer() {
       <div className={style.drawer_footer}>
         <h2>Footer</h2>
       </div>
-    </div>
+    </Grid>
   );
 }
 

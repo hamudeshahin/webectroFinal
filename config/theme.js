@@ -10,6 +10,7 @@ const myDarkTheme = createTheme({
       text: "#fff",
       // you can also create your own color
       myDarkColor: "#ff4ecd",
+      blurBackground: "rgba(0, 0, 0, 0.6)",
     },
     space: {},
     fonts: {},
@@ -25,6 +26,7 @@ const myLighTheme = createTheme({
       text: "#000",
       // you can also create your own color
       myDarkColor: "#ff4ecd",
+      blurBackground: "rgba(225, 225, 225, 0.6)",
     },
     space: {},
     fonts: {},
