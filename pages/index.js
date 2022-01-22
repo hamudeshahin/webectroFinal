@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import ServicesSection from "../components/sections/services-section";
 // components
 import StartingSection from "../components/sections/starting-section";
 Home.layout = "M";
@@ -20,6 +21,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <StartingSection />
+      <ServicesSection />
     </div>
   );
 }

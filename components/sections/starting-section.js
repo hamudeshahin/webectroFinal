@@ -13,14 +13,16 @@ function StartingSection() {
   };
 
   return (
-    <Grid.Container gap={2} direction="column">
+    <Grid.Container gap={2} direction="column" css={{ padding: "40px 0" }}>
       <Grid xs={12}>
         <Grid.Container gap={2}>
           <Grid xs={12} sm={4} justify="center" alignItems="center">
             <Grid.Container gap={0}>
               <Grid xs={12}>
                 <Text as="h1" sm="false">
-                  <span className={style.desc}>Geliştirme Deneyimimiz Var</span>
+                  <span className={`section__title-sec`} data-title="Selam">
+                    Geliştirme Deneyimimiz Var
+                  </span>
                 </Text>
               </Grid>
               <Grid xs={12} direction="column">
@@ -61,7 +63,9 @@ function StartingSection() {
               auto
               color="error"
               icon={<FiInstagram style={{ fontSize: 24 }} />}
-              // onClick={() => alert("Hello World !")}
+              onClick={() =>
+                window.open("https://www.instagram.com/webectro/", "_blank")
+              }
             />
           </Grid>
         </Grid.Container>

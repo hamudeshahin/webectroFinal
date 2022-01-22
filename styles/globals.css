@@ -33,6 +33,22 @@ ul {
   padding: 0;
 }
 
+/* sections */
+.section__title-sec {
+  position: relative;
+  font-size: 62px;
+}
+.section__title-sec::before {
+  content: attr(data-title);
+  position: absolute;
+  font-size: 0.3em;
+  top: -25px;
+  left: -10px;
+  transform: rotate(-30deg);
+  color: var(--nextui-colors-secondary);
+  letter-spacing: 1px;
+}
+
 /* container */
 .container {
   width: 80%;
