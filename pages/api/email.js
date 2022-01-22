@@ -3,6 +3,7 @@ const nodeMailer = require("nodemailer");
 require("dotenv").config();
 
 const PASSWORD = process.env.PASSWORD;
+const EMAIL = process.env.EMAIL;
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
@@ -10,11 +11,10 @@ export default async function handler(req, res) {
       const { email, subject, firstName, lastName, message } = req.body;
 
       const transporter = nodeMailer.createTransport({
-        // port: 465,
-        // host: "smtp.gmail.com",
-        service: "gmail",
+        port: 465,
+        host: "smtp.zoho.com",
         auth: {
-          user: "hamedsahin2018@gmail.com",
+          user: "webectro@zohomail.com",
           pass: PASSWORD,
         },
         secure: true,
@@ -26,8 +26,8 @@ export default async function handler(req, res) {
         });
       // start send message (email)
       const mailData = {
-        from: email,
-        to: "hamedsahin2018@gmail.com",
+        from: "webectro@zohomail.com",
+        to: "webectro@zohomail.com", // our mail
         subject: `Message from ${firstName} ${lastName} about ${subject} his email ${email}`,
         text: message,
         // html: <div>{message}</div>,
