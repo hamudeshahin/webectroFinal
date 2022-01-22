@@ -35,9 +35,9 @@ export default async function handler(req, res) {
 
       // const data = await transporter.sendMail(mailData);
 
-      return await transporter.sendMail(mailData, (err, info) => {
+      return transporter.sendMail(mailData, (err, info) => {
         if (err) {
-          return res.status(400).send("ERROR !!");
+          return res.status(400).send(err);
         } else {
           return res.status(200).send({
             status: true,
