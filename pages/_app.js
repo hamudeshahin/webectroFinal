@@ -8,9 +8,11 @@ import { ThemeProvider as NextThemesProvider } from "next-themes";
 // redux
 import { Provider } from "react-redux";
 import { useStore } from "../redux/index";
+// toast
+import { ToastContainer } from "react-toastify";
 // styles
 import "../styles/globals.css";
-
+import "react-toastify/dist/ReactToastify.css";
 const layouts = {
   M: MainLayout,
   NONE: (props) => <>{props.children}</>,
@@ -33,6 +35,7 @@ function MyApp({ Component, pageProps }) {
         <Provider store={store}>
           <Layout>
             <Component {...pageProps} />
+            <ToastContainer />
           </Layout>
         </Provider>
       </NextUIProvider>

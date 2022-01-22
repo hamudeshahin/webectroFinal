@@ -1,9 +1,17 @@
+import { useState } from "react";
 // components
 import { Grid, Text, Button, Spacer } from "@nextui-org/react";
 import { FiSend, FiInstagram } from "react-icons/fi";
+import ContactUs from "../modals/contact-us";
 // styles
 import style from "./starting-section.module.css";
 function StartingSection() {
+  const [visible, setVisible] = useState(false);
+
+  const closeHandler = () => {
+    setVisible(false);
+  };
+
   return (
     <Grid.Container gap={2} direction="column">
       <Grid xs={12}>
@@ -27,6 +35,7 @@ function StartingSection() {
                       iconRight={<FiSend />}
                       color="secondary"
                       css={{ width: 160 }}
+                      onClick={() => setVisible(true)}
                     >
                       İletişime Geçin
                     </Button>
@@ -57,6 +66,7 @@ function StartingSection() {
           </Grid>
         </Grid.Container>
       </Grid>
+      <ContactUs visible={visible} closeHandler={closeHandler} />
     </Grid.Container>
   );
 }

@@ -28,10 +28,29 @@ h6 {
   margin: 0;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* container */
 .container {
   width: 80%;
   margin: auto;
+}
+
+/* resets */
+.Toastify,
+.Toastify__toast-container {
+  z-index: 100000 !important;
+}
+.custom__notify-toast {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  color: #fff !important;
+  backdrop-filter: blur(3px);
+}
+.custom__notify-toast .Toastify__close-button {
+  color: #fff !important;
 }
 
 @media (max-width: 1200px) {

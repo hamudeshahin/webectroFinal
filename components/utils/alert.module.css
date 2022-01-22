@@ -1,0 +1,22 @@
+.alert {
+  padding: 5px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.alert.error {
+  border: 1px solid #f21361;
+  background-color: rgb(243, 18, 96, 0.3);
+  color: #f21361;
+}
+
+.desc_list {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.desc_list > li {
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #f21361;
+  font-size: 0.9em;
+}
