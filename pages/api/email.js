@@ -33,24 +33,17 @@ export default async function handler(req, res) {
         // html: <div>{message}</div>,
       };
 
-      let done = false;
+      // const data = await transporter.sendMail(mailData);
 
-      const data = await transporter.sendMail(mailData);
-
-      console.log("data __");
-      console.log(data);
-
-      // transporter.sendMail(mailData, (err, info) => {
-      //   if (err) {
-      //     done = false;
-      //   } else {
-      //     done = true;
-      //   }
-      // });
-
-      return res.status(200).send({
-        status: true,
-        message: "Send Mail Worked",
+      return await transporter.sendMail(mailData, (err, info) => {
+        if (err) {
+          return res.status(400).send("ERROR !!");
+        } else {
+          return res.status(200).send({
+            status: true,
+            message: "Send Mail Worked",
+          });
+        }
       });
     } catch (err) {
       console.error(err);
