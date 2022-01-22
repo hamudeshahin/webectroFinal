@@ -51,6 +51,7 @@ function ContactUs({ visible, closeHandler }) {
     const validate = validateData();
     if (validate?.status === false) {
       setErros(validate.errors);
+      return false;
     }
     errors && setErros(null);
     // start api
@@ -138,7 +139,7 @@ function ContactUs({ visible, closeHandler }) {
               contentLeft={<HiOutlineQuestionMarkCircle />}
             />
           </Grid>
-          <Grid xs={6}>
+          <Grid xs={12} sm={6}>
             <Input
               clearable
               bordered
@@ -151,7 +152,7 @@ function ContactUs({ visible, closeHandler }) {
               contentLeft={<IoAt />}
             />
           </Grid>
-          <Grid xs={6}>
+          <Grid xs={12} sm={6}>
             <Input
               clearable
               bordered

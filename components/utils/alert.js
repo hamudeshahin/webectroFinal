@@ -8,10 +8,10 @@ function Alert({ type, description }) {
   return (
     <div className={`${style.alert} ${style.error}`}>
       <Grid.Container>
-        <Grid xs={0.4} justify="center" alignItems="center">
+        <Grid xs={1} justify="center" alignItems="center">
           <BiError style={{ fontSize: 22 }} />
         </Grid>
-        <Grid xs={11.6}>
+        <Grid xs={11}>
           {Array.isArray(description) && (
             <ul className={style.desc_list}>
               {description.map((desc, i) => (
