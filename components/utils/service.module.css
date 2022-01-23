@@ -1,0 +1,8 @@
+.services_item {
+  position: relative;
+  padding-inline-start: 30px;
+}
+.service_num {
+  position: absolute;
+  left: -10px;
+}

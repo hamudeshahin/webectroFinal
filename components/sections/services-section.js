@@ -33,7 +33,7 @@ function ServicesSection(props) {
               key={service.id}
               title={service.title}
               description={service.description}
-              num={i}
+              num={`0${i + 1}`}
             />
           ))}
         </Grid.Container>
