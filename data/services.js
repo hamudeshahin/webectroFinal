@@ -14,7 +14,7 @@ export default [
     id: "s3",
     title: "Kontrol Panel Oluşturma",
     description:
-      "Websitenizin içeriğini hızlıca ve kullanıçlı bir şekilde değiştirin.",
+      "Web sitenizin içeriğini hızlıca ve kullanışlı bir şekilde değiştirin.",
   },
   {
     id: "s4",

@@ -27,7 +27,7 @@ function StartingSection() {
               </Grid>
               <Grid xs={12} direction="column">
                 <p className={"section__text-sec"}>
-                  Merhaba! Biz webectro ekibiyiz. Yeni teknolojiler ve en yüksek
+                  Merhaba! Biz webectro ekibiyiz. Yeni teknolojiler, en yüksek
                   performans ile web siteleri ve web uygulamaları oluşturuyoruz.
                 </p>
                 <Grid.Container gap={1}>

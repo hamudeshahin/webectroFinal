@@ -1,7 +1,8 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import ServicesSection from "../components/sections/services-section";
 // components
+import ProjectSections from "../components/sections/projects-sections";
+import ServicesSection from "../components/sections/services-section";
 import StartingSection from "../components/sections/starting-section";
 Home.layout = "M";
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       </Head>
       <StartingSection />
       <ServicesSection />
+      <ProjectSections />
     </div>
   );
 }
