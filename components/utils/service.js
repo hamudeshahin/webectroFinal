@@ -1,5 +1,5 @@
 // components
-import { Grid, Text, Button } from "@nextui-org/react";
+import { Grid, Text, Button, Tooltip } from "@nextui-org/react";
 import { CgArrowTopRight } from "react-icons/cg";
 // styles
 import style from "./service.module.css";
@@ -24,9 +24,17 @@ function Service({ title, description, link, num }) {
           <Text sm="false" color="error">
             Daha fazlasını keşfedin
           </Text>
-          <Button color="secondary" auto rounded>
-            <CgArrowTopRight fontSize={22} />
-          </Button>
+          <Tooltip
+            content="Yakında etkin olacaktır"
+            shadow
+            placement="top"
+            offset={0}
+            color={"secondary"}
+          >
+            <Button color="secondary" auto rounded>
+              <CgArrowTopRight fontSize={22} />
+            </Button>
+          </Tooltip>
         </Grid>
       </div>
     </Grid>

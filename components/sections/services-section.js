@@ -9,7 +9,7 @@ function ServicesSection(props) {
   return (
     <Grid.Container gap={2} css={{ padding: "40px 0" }}>
       <Grid xs={12} sm={6}>
-        <Grid.Container direction="column">
+        <Grid.Container gap={2} direction="column">
           <Grid>
             <Text as="h1" sm="false">
               <span className={`section__title-sec`} data-title="Servisler">
@@ -19,9 +19,9 @@ function ServicesSection(props) {
           </Grid>
           <Grid>
             <p className={"section__text-sec"}>
-              Bilinirlik oluşturarak, web trafiğini artırarak, müşterilerle
+              Bilinirlik oluşturarak, web trafiğini arttırarak, müşterilerle
               bağlantı kurarak ve genel satışları artırarak sizin gibi iddialı
-              işletmelerin daha fazla kar elde etmesine yardımcı oluyoruz
+              işletmelerin daha fazla kâr elde etmesine yardımcı oluyoruz
             </p>
           </Grid>
         </Grid.Container>
