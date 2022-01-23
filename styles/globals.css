@@ -38,7 +38,7 @@ ul {
   position: relative;
   font-size: 62px;
 }
-.section__title-sec::before {
+/* .section__title-sec::before {
   content: attr(data-title);
   position: absolute;
   font-size: 0.3em;
@@ -47,6 +47,20 @@ ul {
   transform: rotate(-30deg);
   color: var(--nextui-colors-secondary);
   letter-spacing: 1px;
+} */
+
+.section__text-sec {
+  position: relative;
+  padding-inline-start: 2em;
+}
+.section__text-sec::before {
+  content: "";
+  position: absolute;
+  width: 1.3em;
+  height: 2px;
+  background-color: white;
+  left: 0;
+  top: 0.8em;
 }
 
 /* container */

@@ -26,7 +26,7 @@ function StartingSection() {
                 </Text>
               </Grid>
               <Grid xs={12} direction="column">
-                <p className={style.our_text}>
+                <p className={"section__text-sec"}>
                   Merhaba! Biz webectro ekibiyiz. yeni teknolojiler ve en yüksek
                   performans ile web siteleri ve web uygulamaları oluşturuyoruz
                 </p>
