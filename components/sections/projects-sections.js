@@ -21,7 +21,7 @@ function ProjectSections() {
           alignItems="center"
         >
           {data.map((project) => (
-            <Grid xs={12} sm={4} key={project.id}>
+            <Grid xs={12} sm={4} key={project.id} justify="center">
               <Project
                 image={project.image}
                 title={project.title}

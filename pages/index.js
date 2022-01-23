@@ -4,6 +4,8 @@ import { useRouter } from "next/router";
 import ProjectSections from "../components/sections/projects-sections";
 import ServicesSection from "../components/sections/services-section";
 import StartingSection from "../components/sections/starting-section";
+import TeamSection from "../components/sections/team-section";
+
 Home.layout = "M";
 export default function Home() {
   const router = useRouter();
@@ -24,6 +26,7 @@ export default function Home() {
       <StartingSection />
       <ServicesSection />
       <ProjectSections />
+      <TeamSection />
     </div>
   );
 }

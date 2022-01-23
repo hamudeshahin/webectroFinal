@@ -4,7 +4,7 @@ import { BiLinkAlt } from "react-icons/bi";
 
 function Project({ image, title, url }) {
   return (
-    <Card cover>
+    <Card cover css={{ w: "330px" }}>
       {/* <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
         <Col>
           <Text
