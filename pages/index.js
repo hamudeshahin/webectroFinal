@@ -5,6 +5,7 @@ import ProjectSections from "../components/sections/projects-sections";
 import ServicesSection from "../components/sections/services-section";
 import StartingSection from "../components/sections/starting-section";
 import TeamSection from "../components/sections/team-section";
+import DiscussSection from "../components/sections/discuss-section";
 
 Home.layout = "M";
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
       <ServicesSection />
       <ProjectSections />
       <TeamSection />
+      <DiscussSection />
     </div>
   );
 }

@@ -1,0 +1,15 @@
+.item {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc {
+  flex: 1;
+}

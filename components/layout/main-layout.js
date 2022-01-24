@@ -8,6 +8,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { closeDrawer } from "../../redux/mobile-drawer/actions";
 // styles
 import style from "./layout.module.css";
+import Footer from "./footer";
 function MainLayout(props) {
   // get states from redux (drawer) => O => is drawer open
   const { O } = useSelector((state) => state.drawer);
@@ -27,16 +28,16 @@ function MainLayout(props) {
   }, []);
 
   return (
-    <div className="container">
+    <Fragment>
       <Header />
-      <main className={style.main_content}>
-        <div className={style.outer}>{props.children}</div>
-        <img src="/svgs/gradient-right.svg" className={style.g_right} />
-        <img src="/svgs/gradient-left.svg" className={style.g_left} />
-      </main>
-      <footer className={style.footer}>
-        <h2>Footer</h2>
-      </footer>
+      <div className="container">
+        <main className={style.main_content}>
+          <div className={style.outer}>{props.children}</div>
+          <img src="/svgs/gradient-right.svg" className={style.g_right} />
+          <img src="/svgs/gradient-left.svg" className={style.g_left} />
+        </main>
+      </div>
+      <Footer />
       <CSSTransition
         in={O}
         timeout={400}
@@ -56,7 +57,7 @@ function MainLayout(props) {
         <MobileDrawer />
       </CSSTransition>
       {/* {O && <MobileDrawer />} */}
-    </div>
+    </Fragment>
   );
 }
 

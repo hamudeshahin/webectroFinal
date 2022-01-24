@@ -26,10 +26,27 @@ function StartingSection() {
                 </Text>
               </Grid>
               <Grid xs={12} direction="column">
-                <p className={"section__text-sec"}>
+                <Text
+                  as="p"
+                  sm="false"
+                  className={"section__text-sec"}
+                  css={{
+                    position: "relative",
+                    paddingInlineStart: "2em",
+                    "&::before": {
+                      background: "$text",
+                      content: "",
+                      position: "absolute",
+                      width: "1.3em",
+                      height: "2px",
+                      left: 0,
+                      top: "0.8em",
+                    },
+                  }}
+                >
                   Merhaba! Biz webectro ekibiyiz. Yeni teknolojiler, en yüksek
                   performans ile web siteleri ve web uygulamaları oluşturuyoruz.
-                </p>
+                </Text>
                 <Grid.Container gap={1}>
                   <Grid>
                     <Button

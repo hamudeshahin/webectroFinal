@@ -18,11 +18,28 @@ function ServicesSection(props) {
             </Text>
           </Grid>
           <Grid>
-            <p className={"section__text-sec"}>
+            <Text
+              as="p"
+              sm="false"
+              className={"section__text-sec"}
+              css={{
+                position: "relative",
+                paddingInlineStart: "2em",
+                "&::before": {
+                  background: "$text",
+                  content: "",
+                  position: "absolute",
+                  width: "1.3em",
+                  height: "2px",
+                  left: 0,
+                  top: "0.8em",
+                },
+              }}
+            >
               Bilinirlik oluşturarak, web trafiğini arttırarak, müşterilerle
               bağlantı kurarak ve genel satışları artırarak sizin gibi iddialı
               işletmelerin daha fazla kâr elde etmesine yardımcı oluyoruz
-            </p>
+            </Text>
           </Grid>
         </Grid.Container>
       </Grid>
