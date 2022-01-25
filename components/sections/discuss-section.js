@@ -132,6 +132,9 @@ function DiscussSection() {
                   height: "100px",
                   borderRadius: "50%",
                 }}
+                onClick={() =>
+                  window.open("https://wa.me/905442104733", "_blank")
+                }
               >
                 <BsArrowUpRight />
               </Button>
