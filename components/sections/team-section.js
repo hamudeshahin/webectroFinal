@@ -6,7 +6,7 @@ function TeamSection() {
     <Grid.Container gap={2}>
       <Grid xs={12}>
         <Text as="h1" sm="false">
-          <span className="section__title-sec">Webectro Takımı</span>
+          <span className="section__title-sec">Webectro Ekibi</span>
         </Text>
       </Grid>
       <Grid xs={12}>
